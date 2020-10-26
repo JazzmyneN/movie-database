@@ -18,6 +18,7 @@ xhr.onreadystatechange = () => {
     document.querySelector('.title3').innerHTML = data.results[2].original_title;
     document.querySelector('.description3').innerHTML = data.results[2].overview;
     document.querySelector('.thirdm').src = "https://image.tmdb.org/t/p/original/" + data.results[2].poster_path;
+    
 };
 xhr.open("GET", "https://api.themoviedb.org/3/trending/movie/week?api_key=669f2553f52c85815c5e7c10b3197af7");
 xhr.send();
